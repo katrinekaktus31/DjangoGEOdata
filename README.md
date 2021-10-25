@@ -4,10 +4,10 @@ Nowadays, visibility and availability of Internet technologies are the dominant 
 Solution of this problem is presented by a web portal for visualization monitoring observations of earthquake data. It is extremely important to create cross-platform software. The need of users to access a large amount of data that has geospatial information requires  use of intuitive methods of presentation  geodata, as well as geospatial analysis.
 
 #The project requires the creation of environment variables such as
-data base
+#data base
 USER =''
 PASSWORD =''
-Api for parsing
+#Api for parsing
 access_key =''
 
 # All libraries that needed freeze in requairements.txt
