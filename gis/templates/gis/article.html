@@ -1,0 +1,29 @@
+{% extends 'gis/base.html' %}
+
+{% block content %}
+<style>
+h1{
+    text-align: center;
+    color: #772953;
+}
+
+h2{
+    font-family: sans-serif, cursive;
+}
+
+</style>
+
+<h1>Articles</h1>
+{% for x in obj %}
+    <h2><a href="{{x.url}}" >{{ x.title }}</a></h2>
+
+    <p>{{x.short_text}}</p>
+{% endfor %}
+
+{#{% for article in article %}#}
+{#    {% comment %}<h2 style="color:lightskyblue">{{ article.title }}</h2>#}
+{#    <p>{{ article.text }}</p>{% endcomment %}#}
+{#    <h3><a href="{% url 'article' article.url %}">{{ article.title }}</a></h3>#}
+{#    <p> {{ article.short_text |safe }}</p>#}
+{#{% endfor %}#}
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends 'gis/base.html' %}
+{% load i18n %}
+{% load static %}
+
+{% block title %}
+    Earthquake Monitoring 2D
+{% endblock %}
+{% block earthqueaks_head %}
+    <title> Earthquake Monitoring </title>
+{% endblock %}
+{% block content %}
+{#<script type = "text/javascript" src=href="{% static 'gis/earthquake.js' %}"></script>#}
+
+
+    <link  rel="stylesheet" href="https://js.arcgis.com/4.19/esri/themes/light/main.css"/>
+    <link rel="stylesheet" type = "text/css" href="./static/gis/style_earth2.css">
+    <script src="https://js.arcgis.com/4.19/"></script>
+    <script type = "text/javascript" src=href="{% static 'gis/earthquake.js' %}"></script>
+
+
+  <div id="viewDiv"></div>
+{% endblock %}
+

@@ -1,0 +1,20 @@
+{% extends 'gis/base.html' %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+
+{% block content %}
+    <h1 align="center" style="color: #772953">Welcome to Acrgis portal!</h1>
+    <div class="starter-template" align="center">
+
+        <p class="lead"> This web portal provides the ability portal to analyse the zoning of seismic hazards, provide information about catastrophic consequences, and create algorithms to prevent them.</p>
+        <p class="lead">A set of publications and articles makes the portal an important source of information, a free stack of technologies ensures its multiplatform.</p>
+    </div>
+
+    {% for x in obj %}
+        <h2 align="center"><a href="{{x.url}}" >{{ x.title }}</a></h2>
+        <p align="justify">{{x.short_text}}</p>
+    {% endfor %}
+{% endblock %}

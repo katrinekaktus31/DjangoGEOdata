@@ -1,0 +1,18 @@
+.margin_block{
+    margin-top: 80px;
+}
+#viewDiv {
+        padding: 0;
+        margin: 0;
+        height: 800px !important;
+        width: 100%;
+      }
+#mainWindow {
+        padding: 0.5em;
+        background-color: #fff;
+      }
+#mainWindow p,
+#uploadForm {
+        display: block;
+        padding: 0.1em;
+      }
